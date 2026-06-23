@@ -2,7 +2,7 @@
 
 Deployed a web server on AWS EC2 running NGINX, configured a custom domain using Cloudflare DNS, and verified end-to-end HTTP access via the domain.
 
-**Live URL:** `http://<your-domain>` *(update with your domain)*
+**Live URL:** `http://zishankhokhar.co.uk`
 
 ---
 
@@ -89,10 +89,9 @@ Then visit `http://yourdomain.com` in a browser — you should see the NGINX wel
 
 | Problem | Fix |
 |---|---|
-| SSH permission denied | `chmod 400 your-key.pem` |
-| Port 80 not accessible | Added HTTP inbound rule to EC2 Security Group |
-| DNS not resolving yet | Waited for propagation; used `dig` to monitor |
-| EC2 IP changed after restart | Allocated and associated an Elastic IP |
+| Instance type showed t3.micro not t2.micro | t3.micro is newer and also free tier eligible in eu-west-2 |
+| SSH key permissions error | Ran `chmod 400 zishan-devops-key.pem` to fix permissions |
+| Couldn't find Allow SSH checkbox in Network Settings | SSH rule was already there by default, just needed to add HTTP rule manually |
 
 ---
 

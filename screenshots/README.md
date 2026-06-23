@@ -1,14 +1,14 @@
 # Screenshots
 
-Add your screenshots here as you complete the assignment. Suggested filenames:
+Screenshots taken during the EC2 + NGINX + DNS setup.
 
-| File | What to capture |
+| File | What it shows |
 |---|---|
-| `01-ec2-running.png` | EC2 console showing instance in "running" state |
+| `01-ec2-running.png` | EC2 instance running in AWS console |
 | `02-nginx-status.png` | Terminal output of `sudo systemctl status nginx` |
-| `03-dns-a-record.png` | Cloudflare or Route53 DNS console showing A record |
-| `04-domain-browser.png` | Browser showing NGINX welcome page at your domain |
-| `05-dig-output.png` | Terminal output of `dig yourdomain.com +short` |
-| `06-curl-output.png` | Terminal output of `curl -I http://yourdomain.com`
+| `03-dns-a-record.png` | Cloudflare DNS A record configured |
+| `04-dig-output.png` | Terminal output of `dig zishankhokhar.co.uk +short` |
+| `05-curl-output.png` | Terminal output of `curl -I http://zishankhokhar.co.uk` |
+| `06-domain-browser.png` | Browser showing NGINX welcome page at zishankhokhar.co.uk |
 
 
